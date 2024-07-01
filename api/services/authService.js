@@ -2,6 +2,7 @@ const { sql, config } = require('../config/db');
 const bcrypt = require('bcrypt');
 
 const login = async ({ username, password }) => {
+  // console.log("Im in database of AuthService", username, password);
   const result = await sql.query`SELECT * FROM users WHERE username = ${username}`;
   const user = result.recordset[0];
 

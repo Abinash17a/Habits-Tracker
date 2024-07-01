@@ -10,7 +10,6 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-// app.use(bodyParser.json({ type: 'application/json; charset=utf-8' }));
 
 const PORT = 3000;
 
